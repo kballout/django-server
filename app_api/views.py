@@ -9,7 +9,7 @@ from .serializers import PostSerializer, PostTitleSerializer
 class PostListView(APIView):
     def get(self, request):
         posts = Post.objects.all()
-        serializer = PostSerializer(posts, many=True)
+        serializer = PostTitleSerializer(posts, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def post(self, request):
