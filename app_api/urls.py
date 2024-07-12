@@ -7,5 +7,5 @@ from .views import (
 
 urlpatterns = [
     path('api', PostListView.as_view()),
-    path('api/<int:post_id>', PostDetailView.as_view()),
+    path('api/<int:post_id>/', PostDetailView.as_view()),
 ]
