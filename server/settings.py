@@ -56,6 +56,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    'http://256445823298-react-demo.s3-website.us-east-2.amazonaws.com'
 ]
 
 ROOT_URLCONF = 'server.urls'
